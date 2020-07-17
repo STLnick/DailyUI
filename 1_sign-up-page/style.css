@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #303DE3;
+  --secondary-color: #CC0007;
+  --tertiary-color: #FF0633;
+  --gray: #797585;
+  --light-gray: #AEA9BA;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+.form-container {
+  background-color: var(--light-gray);
+  border: 2px solid var(--gray);
+  height: 75vh;
+  padding: 1em;
+}
+
+/* * Reusable Classes * */
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+.flex--align-center {
+  align-items: center;
+}

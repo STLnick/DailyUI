@@ -13,20 +13,29 @@
 
 <body>
   <div class="container flex flex--column flex--align-center flex--justify-center">
-    <div class="form-container flex flex--column flex--align-center">
+    <div class="form-container flex flex--column flex--align-center flex--justify-around">
       <h1 class="title">Sign-Up!</h1>
-      <label for="name">Name</label>
-      <input id="name" type="text">
-      <label for="email">Email</label>
-      <input id="email" type="email">
-      <label for="phone">Phone Number</label>
-      <input id="phone" type="tel">
-      <label class="switch round">
-        <label for="newsletter-switch">No, thanks</label>
-        <input id="newsletter-switch" class="switch-checkbox" type="checkbox">
-        <span class="slider round"></span>
-        <label for="newsletter-switch">Heck yeah!</label>
-      </label>
+      <div class="input-container flex flex--column flex--align-center">
+        <label for="name">Name</label>
+        <input id="name" type="text">
+      </div>
+      <div class="input-container flex flex--column flex--align-center">
+        <label for="email">Email</label>
+        <input id="email" type="email">
+      </div>
+      <div class="input-container flex flex--column flex--align-center">
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel">
+      </div>
+      <div class="input-container flex flex--column flex--align-center">
+        <span>Receive weekly newsletter?</span>
+        <label class="switch round">
+          <label for="newsletter-switch">No, thanks</label>
+          <input id="newsletter-switch" class="switch-checkbox" type="checkbox">
+          <span class="slider round"></span>
+          <label for="newsletter-switch">Heck yeah!</label>
+        </label>
+      </div>
     </div>
   </div>
 </body>

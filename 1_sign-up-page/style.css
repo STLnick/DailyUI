@@ -1,5 +1,6 @@
 :root {
   --primary-color: #303DE3;
+  --primary-dark: #222caf;
   --secondary-color: #CC0007;
   --tertiary-color: #FF0633;
   --gray: #5f5c68;
@@ -17,6 +18,7 @@ body {
 }
 
 .form-container {
+  background-color: #efefef;
   border: 5px solid rgba(48, 61, 227, 0.6);
   border-radius: 10px;
   height: 75vh;
@@ -41,9 +43,66 @@ body {
   width: 80%;
 }
 
-.switch > label {
+.switch {
+  height: 1.5em;
+  position: relative;
+  width: 3em;
+}
+
+.switch-container > .slider-label {
   font-size: 0.75em;
 }
+
+.switch-checkbox {
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+
+.slider {
+  background-color: #fff;
+  border: 1px solid var(--light-gray);
+  bottom: 0;
+  height: 1.5em;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3em;
+}
+
+.slider::before {
+  background-color: var(--primary-color);
+  bottom: 0.25em;
+  content: "";
+  height: 1em;
+  left: 0.2em;
+  position: absolute;
+  transition: 0.3s;
+  width: 1em;
+}
+
+.slider.round::before {
+  border-radius: 1em;
+}
+
+.round {
+  border-radius: 1em;
+}
+
+input:checked + .slider::before {
+  background-color: var(--primary-dark);
+  left: 1.75em;
+}
+
+.yes-label {
+  margin-left: 3.7em;
+}
+
+.selected {
+  color: var(--primary-color);
+}
+
 
 /* * Reusable Classes * */
 

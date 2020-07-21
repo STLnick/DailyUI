@@ -6,7 +6,7 @@ This is part of my journey to become a more proficient Web Designer.
 
 Complete these challenges on a daily basis and after 100 days you'll be a better Web Designer.
 
-This entire repo will store each of the challenges in its own directory prefixed with the challenge number like `1_sign-up-form`.
+This entire repo will store each of the challenges in its own directory prefixed with the challenge number like `1_sign-up-page`.
 
 Instead of creating 100 separate repos for relatively small projects it seemed more appropriate to have one repo. This way I have all of my challenges in one place as well and can better see what I've done in the past and how I'm improving!
 

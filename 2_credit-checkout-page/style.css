@@ -1,3 +1,103 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+input {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 1.5em;
+  outline: none;
+  padding: 5px;
+  width: 15em;
+}
+
+input:focus {
+  background-color: #fefefe;
+  box-shadow: 0 0 3px 3px dodgerblue;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 3px transparent;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0.5em;
+  outline: none;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  transform: translateY(0);
+  transition: box-shadow, transform 0.5s;
+  width: 8em;
+}
+
+button:focus,
+button:hover {
+  transform: translateY(3px);
+}
+
+/* * Classes & IDs * */
+
+.container {
+  background-color: #efefef;
+  height: 50vh;
+  border: 3px solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.ccv-date-container {
+  width: 100%;
+}
+
+.ccv-date-container label {
+  margin-bottom: 0.8em;
+}
+
+#ccv {
+  width: 5em;
+}
+
+#exp-date {
+  width: 12em;
+}
+
+.cancel-btn {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+}
+
+.cancel-btn:focus,
+.cancel-btn:hover {
+  box-shadow: 0 0 3px 3px red;
+}
+
+.confirm-btn {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.confirm-btn:focus,
+.confirm-btn:hover {
+  box-shadow: 0 0 3px 3px #1a79d8;
+}
+
 /* * Reusable Classes * */
 
 .flex {
@@ -8,12 +108,16 @@
   flex-direction: column;
 }
 
+.flex--justify-around {
+  justify-content: space-around;
+}
+
 .flex--justify-center {
   justify-content: center;
 }
 
-.flex--justify-around {
-  justify-content: space-around;
+.flex--justify-evenly {
+  justify-content: space-evenly;
 }
 
 .flex--align-center {

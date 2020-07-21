@@ -4,31 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
   <title>Credit Checkout Form</title>
 </head>
 
-<body>
-  <div class="container">
+<body class="flex flex--align-center">
+  <div class="container flex flex--column flex--align-center">
     <h1>Credit Checkout Form</h1>
-    <form>
+    <form class="flex flex--column flex--align-center flex--justify-around">
       <!-- Name on Card -->
       <label for="name">Name on Card</label>
       <input type="text" name="name" id="name">
       <!-- Credit Card # -->
       <label for="ccnum">Credit Card Number</label>
       <input type="text" name="ccnum" id="ccnum">
-      <div class="ccv-date">
+      <div class="ccv-date-container flex flex--justify-evenly">
         <!-- CCV code -->
-        <label for="ccv">CCV</label>
-        <input type="number" name="ccv" id="ccv">
+        <div class="ccv-container flex flex--column flex--align-center">
+          <label for="ccv">CCV</label>
+          <input type="number" name="ccv" id="ccv">
+        </div>
         <!-- Exp Date -->
-        <label for="exp-date">Expiration Date</label>
-        <input type="month" name="exp-date" id="exp-date">
+        <div class="exp-date-container flex flex--column flex--align-center">
+          <label for="exp-date">Expiration Date</label>
+          <input type="month" name="exp-date" id="exp-date">
+        </div>
       </div>
-      <button class="cancel-btn">Cancel</button>
-      <button class="confirm-btn" type="submit">Confirm Transaction</button>
+      <div class="btn-container flex">
+        <button class="cancel-btn">Cancel</button>
+        <button class="confirm-btn" type="submit">Confirm</button>
+      </div>
     </form>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
